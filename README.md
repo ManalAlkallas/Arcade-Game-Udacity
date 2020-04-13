@@ -1,5 +1,5 @@
-
-# Custom frogger Arcade Game :frog:
+﻿
+# Udacity Classic Arcade Game Clone
 
 ## Summary :speech_balloon:
 Custom frogger Arcade is a variation of the classic Frogger arcade game developed by Konami and licensed for North American distribution by Sega-Gremlin and worldwide by Sega itself. It is regarded as a classic from the golden age of video arcade games, noted for its novel gameplay and theme. [wiki/Frogger](https://en.wikipedia.org/wiki/Frogger)
