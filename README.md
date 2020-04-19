@@ -1,16 +1,22 @@
-﻿# Udacity Classic Arcade Game Clone
+﻿# Udacity Classic Arcade Game
 
+The object of the game is simple, you should direct the character across the grey brick road, full of enemy bugs, towards the water without getting hit with any enemy.
 
- This game consists of a player character and enemy bugs. The goal of the game is to reach the water, without colliding into any of the enemies, and the player can move left, right, up and down with the keyboard arrow keys. The the killer bugs move in varying speeds across the screen and your manual dexterity and quick reflexes are needed to avoid the enemy bugs and to reach the water. Once the player collides with an enemy, the game is reset and the player moves back to the start square. Once the player reaches the water ten times with out losing three lives, the game is won. Run fast!
+Your score is based on your current score + (level x 2) for each level you pass.
 
- ## Languages / Tools used
+The enemy bugs run randomly speeds in the x direction and random y locations given their constraints which is between the grey bricks.
+
+If you hit  an enemy bug, your level decreases by 1, your score decreases by 1 and the enemy you run into will disappear.
+
+## How to play the game:
+Users can control the character by using the arrow keys on the keyboard
+
+## Languages / Tools used
 
 * HTML & CSS
 * HTML5 Canvas
 * JavaScript
 
-## Getting started
-Open the index.html file in any modern browser, click inside the game area, and enjoy playing the game.
 
  
 
