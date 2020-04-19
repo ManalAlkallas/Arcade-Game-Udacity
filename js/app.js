@@ -1,14 +1,14 @@
 
-var Bug = function(ghost, x, y, name) {
-    this.ghost = ghost;
+var Bug = function(sprite, x, y, name) {
+    this.sprite = sprite;
     this.x = x;
     this.y = y;
     this.name = name;
 };
 
 Bug.prototype.render = function() {
-    // calls the context from canvas to draw the ghost image
-    ctx.drawImage(Resources.get(this.ghost), this.x, this.y);
+    // calls the context from canvas to draw the sprite image
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     ctx.font = "15px Roboto";
     ctx.textAlign = "center";
     // gave the Bug a unique name
@@ -16,10 +16,10 @@ Bug.prototype.render = function() {
 };
 
 // Enemies our player must avoid
-var Enemy = function(ghost, x, y, name, movement) {
+var Enemy = function(sprite, x, y, name, movement) {
     // Calling the Bug constructor so we can pass
     // in those arguments so we don't have to re-write the code
-    Bug.call(this, ghost, x, y, name);
+    Bug.call(this, sprite, x, y, name);
     // enemy has it's own unique movement
     this.movement = movement;
 };
@@ -48,8 +48,8 @@ Enemy.prototype.update = function(dt) {
     checkCollision();
 };
 
-var Player = function(ghost, x, y, name, movement) {
-    Bug.call(this, ghost, x, y, name);
+var Player = function(sprite, x, y, name, movement) {
+    Bug.call(this, sprite, x, y, name);
     // This sets the player to move at 50px
     this.movement = 50;
 };
